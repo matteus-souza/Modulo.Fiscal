@@ -228,4 +228,78 @@ Essa cadeia de documentos é essencial para garantir conformidade fiscal, transp
 
 # PASSO 13: NF-e > CT-e > MDF-e:
 
-> - 📌 Sisatak > MOV020 > 
+> - 📌 Sisatak > MOV011 > T500 > Faço um pedido de venda.
+![alt text](image-26.png)
+
+> - 📌 Sisatak > MOV020 > Montagem de carga > Aqui vou informar o  percurso e o motorista para o transporte do pedido de venda: 
+>   - Gerar MDF-e 
+>   - MDFe's Geradas 
+>   - 2 cliques 
+>   - Informar o contratante:
+>     - dados do transporte 
+>     - Seguro/Pedágio 
+>     - Produto predominante 
+>     - Lembrar de deixar o 'Status' como fechado.
+>
+>![alt text](image-25.png)
+
+> - 📌 Sisatak > MOV011 > T510 > Realizo o romaneio de saída.
+![alt text](image-27.png)
+
+> - 📌 Sisatak > MOV011 > T520 > Faço a nota fiscal de saída.
+![alt text](image-28.png)
+
+> - 📌 Sisatak > MOV020 > Montagem de carga > Faço a geração do Mdf-e.
+![alt text](image-24.png)
+
+> - 📌 Sisatak > ECF115 > Lote de manifesto Eletronico de Doc > Aqui eu vou fazer a transmissão do Mdf-e. > Faço a inclusão da nota > Faço o envio > Faço a consulta.
+![alt text](image-23.png)
+
+> - 📌 Sisatak > MOV020 > Montagem de carga > Gerar MDF-e > MDFe-s Geradas > Encerrar MDF-es.
+![alt text](image-21.png)
+
+# PROCESSO PARA GERAR O CT-E:
+
+- 📌 Sisatak > MOV092 > T147
+
+   - Agrupa documento ?
+     - Se eu flegar gerar um ct-e por documento > selecionar apenas quando for mais que um destino a carga
+     - Gerar Apenas um CT-e > Selecionar quando for apenas um destino.
+   - Tributação:
+
+No contexto de transporte e tributação, cada um desses termos tem um papel específico. Aqui está uma explicação sobre cada um deles:
+
+- **Tomador**: É a pessoa física ou jurídica responsável pelo pagamento do frete. A tributação pode variar dependendo do tipo de contrato (CIF ou FOB). No CIF, o remetente é o tomador; no FOB, o destinatário geralmente assume esse papel.
+
+- **Remetente**: É quem envia a mercadoria. Normalmente, é o responsável pela emissão da nota fiscal e pode ser tributado dependendo do tipo de operação e do contrato de transporte.
+
+- **Destinatário**: É quem recebe a mercadoria no destino final. A tributação pode incidir sobre ele, especialmente em contratos FOB, onde ele é o tomador do frete.
+
+- **Recebedor**: É quem recebe a carga de forma intermediária, como em casos de redespacho. Ele não é o destinatário final, mas pode ser envolvido em operações tributáveis dependendo do tipo de serviço.
+
+- **Expedidor**: É quem entrega a carga ao transportador. Em operações multimodais ou de redespacho, ele pode ser diferente do remetente e pode ter obrigações tributárias específicas.
+
+Nesse caso deixamos como Tomador
+
+![alt text](image-29.png)
+
+  - Dados do produto
+    - Cod. do produto
+    - Descrição do produto predominante
+    - Valor total > Valor para o frete (Caso tenha mais que uma entrega lembrar de somar o valor e colocar o valor total, após gerar o CT-E ele faz o rateio do valor do frete caso tenha mais quem uma entrega)
+  - Filtrar por carga > Pesquisar
+  - Preencher as 'ABAS'
+    - Tomador
+![alt text](image-30.png)
+    - Remetente
+![alt text](image-32.png)
+    - Destinatário
+![alt text](image-34.png)
+
+  - Preencher as 'ABAS'
+    - Dados do transporte I
+![alt text](image-31.png)
+    - Dados do transporte II
+![alt text](image-33.png)
+    - Dados do seguro
+![alt text](image-35.png)
